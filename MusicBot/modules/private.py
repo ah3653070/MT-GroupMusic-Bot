@@ -14,15 +14,15 @@ def _start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+                        "➕ 𝙰𝚍𝚍𝚖𝚎 𝚝𝚘 𝙶𝚛𝚘𝚞𝚙 ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                 [
                     InlineKeyboardButton(
-                        "📲 Uodates", url=f"https://t.me/{UPDATES_CHANNEL}"), 
+                        "𝚄𝚙𝚍𝚊𝚝𝚎𝚜🏮", url=f"https://t.me/{UPDATES_CHANNEL}"), 
                     InlineKeyboardButton(
-                        "💬 Support", url=f"https://t.me/{SUPPORT_GROUP}")
+                        "👥𝚂𝚞𝚙𝚙𝚘𝚛𝚝", url=f"https://t.me/{SUPPORT_GROUP}")
                 ],[
                     InlineKeyboardButton(
-                        "🛠 Source Code 🛠", url=f"https://{SOURCE_CODE}")
+                        "𝙾𝚞𝚛 𝙱𝚘𝚝𝚜 📒", url=f"https://{SOURCE_CODE}")
                 ]
             ]
         ),
@@ -37,7 +37,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "💬 Support Chat", url=f"https://t.me/{SUPPORT_GROUP}"
+                        "👥𝚂𝚞𝚙𝚙𝚘𝚛𝚝", url=f"https://t.me/{SUPPORT_GROUP}"
                     )
                 ]
             ]
@@ -78,9 +78,9 @@ def map(pos):
         url = f"https://t.me/{SUPPORT_GROUP}"
         button = [
             [InlineKeyboardButton("➕ Add me to your Group 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-            [InlineKeyboardButton(text = '📲 Updates', url=f"https://t.me/{UPDATES_CHANNEL}"),
-             InlineKeyboardButton(text = '💬 Support', url=f"https://t.me/{SUPPORT_GROUP}")],
-            [InlineKeyboardButton(text = '🛠 Source Code 🛠', url=f"https://{SOURCE_CODE}")],
+            [InlineKeyboardButton(text = '𝚄𝚙𝚍𝚊𝚝𝚎𝚜🏮', url=f"https://t.me/{UPDATES_CHANNEL}"),
+             InlineKeyboardButton(text = '👥𝚂𝚞𝚙𝚙𝚘𝚛𝚝', url=f"https://t.me/{SUPPORT_GROUP}")],
+            [InlineKeyboardButton(text = '𝙾𝚞𝚛 𝙱𝚘𝚝𝚜 📒', url=f"https://{SOURCE_CODE}")],
             [InlineKeyboardButton(text = '◀️', callback_data = f"help+{pos-1}")]
         ]
     else:
